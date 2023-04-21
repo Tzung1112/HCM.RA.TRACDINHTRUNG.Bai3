@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .header {
+        display: flex;
+        background-color: rgb(223, 58, 43);
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        color: aliceblue;
+        padding: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        width: 100%;
+
+    }
+    h1{
+        font-size: 50px;
+        font-style: normal;
+    }
+    input{
+        font-size: 12px;
+        width: 250px;
+        border-radius: 3px;
+        border: 0px;
+        height: 30px;
+
+    }
+    button{
+        width: 30px;
+        height: 30px;
+        border: 0px solid;
+        color: rgb(223, 58, 43);
+        border-radius: 3px;
+    }
+    .phantrang{
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        height: 100px;
+    }
+    .main{
+        background-color: rgb(247, 247, 247);
+    }
+    section{
+        background-color:rgb(247, 247, 247);
+        display: flex;
+        flex-wrap: wrap;
+        width:90%;
+        margin: auto;
+        padding: 10px;
+        justify-content: space-around;
+    }
+    .danhmuc{
+        border: 0px solid black;
+        background-color: white;
+    }
+    .sanpham{
+        border: 0px solid black;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 15%;
+        justify-content: space-evenly;
+    }
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        flex: 1;
+    }
+    .ct{
+        padding: 10px;
+        background-color: white;
+        width: 100%;
+        flex: 1;
+    }
+    .span{
+        color: red;
+        text-align: center;
+    }
+    .cttren{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .trai{
+        margin-right: 20px;
+    }
+    .phai{
+        margin-left: 20px;
+    }
+    .ctduoi{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    footer{
+        margin: auto;
+    }
+    table{
+        background-color:rgb(247, 247, 247) ;
+        width: 90%;
+        padding: 10px;
+        margin: auto;
+        
+    }
+    tr{
+        font-size: 12px;
+        color: gray;
+    }
+
+</style>
+
+<body>
+    <header class="header">
+        <div class="content">
+            <h1>RIKKEI_ACADEMY_SHOP</h1>
+        </div>
+        <div class="input">
+            <input type="text" placeholder="Tìm kiếm theo tên sản phẩm!">
+        </div>
+        <div class="search">
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        <div class="giohang">
+            <a href="#" target="_blank" style="text-decoration: none;color: aliceblue;"><i class="fa-solid fa-cart-shopping"></i> Giỏ
+                Hàng</a>
+        </div>
+        <div class="dangnhap">
+            <a href="#" target="_blank" style="text-decoration: none;color: aliceblue;"> Đăng Nhập</a>
+        </div>
+        <div class="dangki">
+            <a href="#" target="_blank" style="text-decoration: none;color: aliceblue;"> Đăng Ký</a>
+        </div>
+    </header>
+    <div class="phantrang"></div>
+   <div class="main">
+    <section>
+        <div class="danhmuc">
+            <p><i class="fa-solid fa-list"></i> Danh Mục Sản Phẩm</p>
+            <hr>
+            <ul style="list-style-type: none;">
+                <li style="color: red;"><i class="fa-solid fa-play"></i>Tất cả sản phẩm</li>
+                <ul style="margin-left: 15px; list-style-type: none;">
+                    <li>Thiết bị điện tử</li>
+                    <li>Sách </li>
+                    <li>Đồ tiêu dùng</li>
+                    <li>Thời trang</li>
+                </ul>
+            </ul>
+        </div>
+        <div class="sanpham">
+            <div class="ig">
+                <img src="./iphone11promax.jpg" alt="">
+            </div>
+            <div class="ct">
+                <h4>Iphone12promax</h4>
+                <div class="span">35.000.000đ<i class="fa-solid fa-cart-shopping"></i></div>
+                <div class="cttren">
+                    <div class="trai">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="phai">
+                        48 đã bán
+                    </div>
+                </div>
+                <div class="ctduoi">
+                    <div class="trai">
+                        Apple
+                    </div>
+                    <div class="phai">
+                        Hà Nội
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <div class="sanpham">
+            <div class="ig">
+                <img src="./DacNhanTam.jpg" alt="">
+            </div>
+            <div class="ct">
+                <h4>Đắc nhân tâm</h4>
+                <div class="span">56.100đ<i class="fa-solid fa-cart-shopping"></i></div>
+                <div class="cttren">
+                    <div class="trai">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="phai">
+                        16498 đã bán
+                    </div>
+                </div>
+                <div class="ctduoi">
+                    <div class="trai">
+                        
+                    </div>
+                    <div class="phai">
+                        Hà Nội
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <div class="sanpham">
+            <div class="ig">
+                <img src="./haohao.jpg" alt="">
+            </div>
+            <div class="ct">
+                <h4 >Thùng mỳ Hảo Hảo</h4>
+                <div class="span">108.000đ<i class="fa-solid fa-cart-shopping"></i></div>
+                <div class="cttren">
+                    <div class="trai">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="phai">
+                        14905 đã bán
+                    </div>
+                </div>
+                <div class="ctduoi">
+                    <div class="trai">
+                    
+                    </div>
+                    <div class="phai">
+                        Hồ Chí Minh
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <div class="sanpham">
+            <div class="ig">
+                <img src="./BiaHeineken.jpg" alt="">
+            </div>
+            <div class="ct">
+                <h4>Thùng bia Heineken</h4>
+                <div class="span">405.000đ<i class="fa-solid fa-cart-shopping"></i></div>
+                <div class="cttren">
+                    <div class="trai">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="phai">
+                        6843 đã bán
+                    </div>
+                </div>
+                <div class="ctduoi">
+                    <div class="trai">
+                        
+                    </div>
+                    <div class="phai">
+                        Hồ Chí Minh
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <div class="sanpham">
+            <div class="ig">
+                <img src="./sunlight.jpg" alt="">
+            </div>
+            <div class="ct">
+                <h4>Nước rửa chén Sunlight</h4>
+                <div class="span">91.000đ<i class="fa-solid fa-cart-shopping"></i></div>
+                <div class="cttren">
+                    <div class="trai">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="phai">
+                        3516 đã bán
+                    </div>
+                </div>
+                <div class="ctduoi">
+                    <div class="trai">
+                        
+                    </div>
+                    <div class="phai">
+                        Hồ Chí Minh
+                    </div>
+                </div>
+    
+            </div>
+        </div>     
+    </section>
+    <div style="background-color: rgb(158, 43, 66);height: 5px;"></div>
+    <footer>
+        <table >
+            <tr style="font-weight: bold; color: black;">
+                <td>CHĂM SÓC KHÁCH HÀNG</td>
+                <td>GIỚI THIỆU</td>
+                <td>DANH MỤC SẢN PHẨM</td>
+                <td>THEO DÕI CHÚNG TÔI</td>
+                <td>ĐỘI NGŨ PHÁT TRIỂN</td>
+            </tr>
+            <tr>
+                <td>Trung tâm trợ giúp</td>
+                <td>Điều khoản</td>
+                <td> Thời trang</td>
+                <td><i class="fa-brands fa-facebook"></i>Facebook</td>
+                <td style="color: red;">Trinh Quốc Hai</td>
+            </tr>
+            <tr>
+                <td>Hướng dẫn mua hàng</td>
+                <td>Chính sách bảo mật</td>
+                <td>Đồ tiêu dùng</td>
+                <td><i class="fa-brands fa-instagram"></i>Instagram</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Tuyển dụng</td>
+                <td>Thiết bị điện tử</td>
+                <td><i class="fa-brands fa-twitter"></i>Twitter</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td >Sách</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </footer>
+    <div style="background-color: rgb(6, 6, 6);height: 5px;"></div>
+   </div>
+</body>
+
+</html>
